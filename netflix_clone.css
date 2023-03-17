@@ -1,0 +1,639 @@
+body{
+  
+    background-color: rgb(35,35,35);
+   font-family: sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Navbar CSS */
+#navbar{
+    /* margin-inline: auto; */
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+    /* height: 70px; */
+    /* width: clamp(max-content,100%,800px); */
+    /* min-width: max-content; */
+    max-width: 100%;
+    /* width: 100%; */
+    margin-inline: 9rem ;
+    gap: 2em;
+    /* padding-left: 6.5rem; */
+    /* border: 3px solid red; */
+    align-items: center;
+}
+#logo{
+    flex-grow: 1;
+
+
+}
+#logo img{
+    width: 13rem;
+    height: 5rem;
+    margin-top: 1rem;
+
+    /* margin-left: auto; */
+}
+#language{
+    position: relative;
+    top: 0.5rem;
+    border: 0.5px solid white;
+    border-radius: 3px;
+}
+#language img{
+    position: relative;
+    filter: invert(100%);
+    width: 1.1rem;
+    top: 0.3rem;
+    left: 0.3rem;
+    
+}
+#language select{
+    /* width: 12rem;
+    height: 2rem; */
+    padding-block: 0.5rem ;
+    padding-right: 6rem;
+    background-color: transparent;
+    color: white;
+    /* border: 3px solid white; */
+    border-radius: 5px;
+    /* margin-top: 1rem; */
+    border: none;
+    
+
+    /* margin-left: 44rem; */
+}
+#language option{
+    color: white;
+    
+}
+#navbar button{
+    margin-top: 1rem;
+    padding: 0.4rem 0.7rem;
+    height: min-content;
+    /* margin-left: 1rem ; */
+}
+
+.btn{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    /* width: 6rem;
+    height:2rem */
+   
+ }
+
+ /* Home CSS */
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+
+
+}
+#nav-home-container{
+    background-color: rgb(63, 61, 61);
+    background-image: url(image/home.jpg) ;
+    height: 100%;
+    width: 100%;
+    background-blend-mode: multiply; 
+    /* border: 10px solid red; */
+}
+#home h1{
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#home p{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    /* border: 2px solid red; */
+  
+}
+#register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 0;
+    width: 100%;
+    /* max-width: 36.625rem; */
+}
+#register input{
+   background-color: transparent;
+   color: white;
+   /* transition: color 250ms cubic-bezier(0.5, 0, 0.1, 1) 0s; */
+   width: 100%;
+   line-height: 1.5rem;
+   padding: 1rem 1.5rem 0.5rem;
+   margin-top: 0.8rem;
+   margin-right: 10rem;
+   border: 1px solid white;
+   border-radius: 5px;
+   font-size: large;
+}
+#register input::placeholder{
+    color: white;
+}
+#membership{
+    width: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-height: 3.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 1rem;
+}
+
+/* Main section CSS */
+#first-section{
+    background-color: black;
+    margin-top: 0.5rem;
+   
+}
+#first-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-inline: 11rem; */
+    margin-left: 11rem;
+    margin-right: 7rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+
+}
+#first-container h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: left;
+    padding-right: 0.375rem;
+}
+#first-container p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    padding-right: 0.375rem;
+    margin-top: 1rem;
+}
+#video-container{
+    display: flex;
+    position: relative;
+}
+#video-container img{
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+#video-container video{
+    left: 12%;
+    top: 19%;
+    position: absolute;
+    max-width: 80%;
+}
+
+/* Second container */
+#second-container h1{
+    color: white;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: left;
+    padding-right: 0.375rem;
+}
+#second-container p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: left;
+    padding-right: 0.375rem;
+    margin-top: 1rem;
+}
+#second-section{
+    background-color: black;
+    margin-top: 0.5rem;
+   
+}
+#second-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-inline: 11rem; */
+    margin-left: 11rem;
+    margin-right: 7rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+#video-container-2{
+    /* display: flex; */
+    /* flex-direction: column; */
+    color: white;
+    position: relative;
+}
+#eleven-img img{
+   width: 100%;
+   
+}
+#SD {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    max-width: 9rem;
+    justify-content: left;
+}
+#download-symbol img{
+   height: 3rem;
+}
+#download-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 1rem;
+    border: 1px solid white;
+    position: absolute;
+    background-color: black;
+    margin: auto;
+    left: 22%;
+    bottom: 8%;
+    padding: 0.5rem;
+    
+}
+#St img{
+    height: 4rem;
+   
+}
+#stranger{
+    font-size: 0.9rem;
+}
+#downloading{
+    font-size: 0.9rem;
+    color: blue;
+}
+
+/* Third Section CSS */
+#video2-container{
+    display: flex;
+    position: relative;
+}
+#video2-container video {
+    left: 17%;
+    /* right: 20%; */
+    top: 11%;
+    position: absolute;
+    max-width: 65%;
+}
+#video2-container img{
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+#kid-img img{
+    width: 100%;
+}
+
+/* Question Section CSS */
+#Questions-section{
+    background-color: black;
+    margin-top: 0.5rem;
+}
+#Questions-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 11rem;
+    padding-block: 4.5rem;
+}
+#Questions-container h1{
+ font-size: 3rem;
+ /* padding-top: 4.5rem; */
+ font-weight: 1000;
+ text-align: center;
+}
+#Questions-container ul{
+    list-style: none;
+    width: 100%;
+    margin-top: 1rem;
+    
+}
+#Questions-container ul li{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    margin: 0.6rem 0 0;
+    background-color: rgb(45, 45, 45);
+    font-size: 1.5rem;
+    align-items: center;
+}
+.p{
+   font-size: 3rem;
+}
+#text-2{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+/* footer css */
+#footer{
+    margin-top: 0.5rem;
+    background-color: black;
+}
+#footer-container{
+    color: rgb(179,179,179);
+    display: flex;
+    flex-direction: column;
+    margin-inline: 11rem;
+}
+#call{
+    padding-top: 4rem;
+}
+#call p{
+    padding-block: 1rem;
+}
+#grid ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    
+}
+#grid ul li{
+    text-decoration: underline;
+    padding-top: 1rem;
+}
+#footer-container ul{
+    list-style: none;
+}
+#footer-language{
+    margin-top: 3rem;
+    top: 0.5rem;
+    border: 0.5px solid white;
+    border-radius: 3px;
+    width: min-content;
+    display: flex;
+    align-items: center;
+}
+#footer-language img{
+    filter: invert(100%);
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 0.5rem;
+    
+}
+#footer-language select{
+    /* width: 12rem;
+    height: 2rem; */
+    padding-block: 0.5rem ;
+    padding-right: 2rem;
+    background-color: transparent;
+    color: white;
+    /* border: 3px solid white; */
+    border-radius: 5px;
+    /* margin-top: 1rem; */
+    border: none;
+    
+
+    /* margin-left: 44rem; */
+}
+#footer-language option{
+    color: white;
+    
+}
+#last-text{
+    margin-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 839px) {
+    #navbar{
+        margin-inline: 1rem;
+    }
+    #language select{
+        
+        padding-block: 0.5rem ;
+        padding-right: 0;
+        background-color: transparent;
+        color: white;
+        border: none;
+    }
+    #navbar button{
+        margin-top: 1rem;
+        padding: 0.2rem 0.4rem;
+        height: min-content;
+        /* margin-left: 1rem ; */
+    }
+    #logo img{
+        width: 8rem;
+        height: 3rem;
+    }
+    #footer-container{
+        
+        margin-inline: 2rem;
+    }
+}
+@media screen and (max-width: 744px) {
+    #language select{
+       font-size: 0;
+    }
+}
+@media screen and (max-width: 470px) {
+    #membership{
+       
+    width: 17rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    margin-top: 7px;
+
+    }
+    #second-container h1{
+        font-size: 2rem;
+    }
+    #second-container p{
+        font-size: 1rem;
+    }
+    #Questions-container ul li{
+        font-size: 1rem;
+    }
+    .p{
+       font-size: 2rem;
+    }
+    #grid ul{
+        
+        grid-template-columns: auto auto;
+        
+    }
+    
+}
+@media screen and (max-width: 300px) {
+    #download-image{
+        display: none;
+    }
+}
+@media screen and (max-width: 360px) {
+    #navbar{
+        gap: 0;
+        margin-inline: 0;
+    }
+    #membership{
+       
+        width: 100%;
+        height: 2.5rem;
+        font-size: 1.2rem;
+        margin-top: 7px;
+    
+        }
+         #St img{
+        height: 1.5rem;
+       
+    }
+    #stranger{
+        font-size: 0.1rem;
+    }
+    #downloading{
+        font-size: 0.1rem;
+        color: blue;
+    }
+    #download-symbol img{
+        height: 1.3rem;
+     }
+     #download-image{
+        left: 0;
+        right: 20%;
+        bottom: 6%;
+        
+    }
+    #SD{
+        margin-right: 0;
+    }
+    #grid ul{
+       
+        grid-template-columns: auto ;
+        
+    }
+}
+/* first container section media query */
+@media screen and (max-width: 1280px) {
+    #first-container{
+       
+        margin-inline: 1rem;
+    }
+   
+}
+@media screen and (max-width: 1040px) {
+    #first-container{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #first-container h1{
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    #first-container p{
+        color: white;
+       text-align: center; 
+    margin: 1rem 0 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    }
+     #second-container{
+        flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    #second-container h1{
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    #second-container p{
+        color: white;
+       text-align: center; 
+    margin: 1rem 0 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    }
+    #download-image{
+       
+        left: 22%;
+        bottom: 8%;
+        
+    }
+    #St img{
+        height: 4rem;
+       
+    }
+    #stranger{
+        font-size: 0.9rem;
+    }
+    #downloading{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 660px) {
+    #register{
+        flex-direction: column;
+        margin-inline: 0;
+       
+    }
+    #register input{
+        margin-right: 0;
+    }
+    #membership{
+        width: auto;
+        font-size: 1rem;
+        font-weight: 500;
+        min-height: 3.5rem;
+        padding: 0.75rem 1.5rem;
+        background: rgb(229, 9, 20);
+        color: rgb(255, 255, 255);
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    #video-container img{
+        width: 80%;
+    }
+    #video-container video{
+        left: 20%;
+        top: 20%;
+        position: absolute;
+        max-width: 60%;
+    }
+    #video-container img{
+        margin-left: 2rem;
+    }
+    #Questions-container{
+        margin-inline: 3rem;
+    }
+
+}
+/* Utility Classes */
+
